@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Uses awk to check if a 4th value exists in the row, which in turn would
+# represent whether the student has a 3rd score/grade, and prints the 
+# required message if not present with $1 to get the student's name/ID
+
+awk '{
+    if (length($4) == 0)
+        print "Not all scores are available for", $1
+    }' 

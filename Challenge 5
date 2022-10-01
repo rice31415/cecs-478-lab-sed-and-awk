@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Similar to Challenge 4 but the condition has changed to check if any of the
+# 3 scores are below 50 and prints a fail statement if so. An else block has
+# also now been added to print a pass statement in the event all scores are
+# above 50
+
+awk '{
+    if ($2 < 50 || $3 < 50 || $4 < 50)
+        print $1, ": Fail";
+    else
+        print $1, ": Pass";
+    }'

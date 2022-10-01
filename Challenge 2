@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Similar to Challenge 1, but this time we also add the I option to ignore
+# case in the letters of thy and the g option to replace all occurences in 
+# a line, not just the first occurence of every line
+
+sed 's/\<thy\>/your/Ig'

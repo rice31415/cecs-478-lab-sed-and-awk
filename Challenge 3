@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Similar to Challenge 2, but this time we replace thy with {&}, &
+# representing the original string, so that we can just place brackets
+# around it
+
+sed 's/\<thy\>/{&}/Ig'

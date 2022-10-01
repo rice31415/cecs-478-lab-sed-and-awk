@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Uses sed to substitute the first phrase with the second. the \< and \>
+# around the "the" are so that it only replaces the as its own individual word
+# rather than as part of a word like there
+
+sed 's/\<the\>/this/'
